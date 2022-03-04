@@ -31,8 +31,7 @@ def count():
     action = params['action']
 
     # 执行自增操作
-    if action == 'inc':
-        print(1111111111111)
+    if action == 'inc':        
         counter = query_counterbyid(1)
         if counter is None:
             counter = Counters()
