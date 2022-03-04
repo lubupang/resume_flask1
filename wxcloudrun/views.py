@@ -32,6 +32,7 @@ def count():
 
     # 执行自增操作
     if action == 'inc':
+        print(1111111111111)
         counter = query_counterbyid(1)
         if counter is None:
             counter = Counters()
