@@ -21,6 +21,7 @@ def count():
     """
 
     # 获取请求体参数
+    print(0000000,request)
     params = request.get_json()
     print(1111111111)
 
