@@ -20,10 +20,8 @@ def count():
     :return:计数结果/清除结果
     """
 
-    # 获取请求体参数
-    print(0000000,request)
+    # 获取请求体参数    
     params = request.get_json()
-    print(1111111111)
 
     # 检查action参数
     if 'action' not in params:
