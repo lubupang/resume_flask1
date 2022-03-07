@@ -4,6 +4,6 @@ import os
 DEBUG = True
 
 # 读取数据库环境变量
-username = os.environ.get("MYSQL_USERNAME", r'root')
-password = os.environ.get("MYSQL_PASSWORD", r'lubupangAdmin123!@#')
-db_address = os.environ.get("MYSQL_ADDRESS", r'10.0.224.8:3306')
+username = r'root'
+password = r'lubupangAdmin123!@#'
+db_address =r'10.0.224.8:3306'
