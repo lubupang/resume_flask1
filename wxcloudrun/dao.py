@@ -15,6 +15,7 @@ def query_counterbyid(id):
     :param id: Counter的ID
     :return: Counter实体
     """
+    logger.info("bbbbbbbbb")
     try:
         return Counters.query.filter(Counters.id == id).first()
     except OperationalError as e:
