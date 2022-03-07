@@ -8,7 +8,7 @@ from wxcloudrun.model import Counters
 # 初始化日志
 logger = logging.getLogger('log')
 
-
+logger.info(db)
 def query_counterbyid(id):
     """
     根据ID查询Counter实体
