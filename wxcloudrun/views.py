@@ -21,6 +21,7 @@ def count():
     """
 
     # 获取请求体参数    
+    logger.info('aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa---------------------')
     params = request.get_json()
 
     # 检查action参数
@@ -29,7 +30,7 @@ def count():
 
     # 按照不同的action的值，进行不同的操作
     action = params['action']
-    logger.info('aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa---------------------')
+    logger.info('bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb---------------------')
 
     # 执行自增操作
     if action == 'inc':        
