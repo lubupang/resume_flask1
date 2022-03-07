@@ -4,8 +4,8 @@ from run import app
 from wxcloudrun.dao import delete_counterbyid, query_counterbyid, insert_counter, update_counterbyid
 from wxcloudrun.model import Counters
 from wxcloudrun.response import make_succ_empty_response, make_succ_response, make_err_response
-
-
+import logging
+logger = logging.getLogger('log')
 @app.route('/')
 def index():
     """
@@ -29,6 +29,7 @@ def count():
 
     # 按照不同的action的值，进行不同的操作
     action = params['action']
+    logger.info('aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa---------------------')
 
     # 执行自增操作
     if action == 'inc':        
